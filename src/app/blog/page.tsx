@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'http://localhost:3000' : 'http://localhost:3001'}/api/posts`, {
+  const res = await fetch(`${process.env.NODE_ENV === 'production' ? 'https://mylu.vercel.app' : 'http://localhost:3001'}/api/posts`, {
     cache: "no-store",
   });
 
